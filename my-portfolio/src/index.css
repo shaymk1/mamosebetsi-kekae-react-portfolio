@@ -22,6 +22,7 @@
 	--color-light: rgba(255, 255, 255, 0.6);
 	--color-orange-dark: #e76f51;
 	--color-white: #ffff;
+	--color-primary-variant-new:rgba(77,181,255,0.4);
 
 	--container-width-lg: 75%;
 	--container-width-md: 86%;
@@ -66,7 +67,7 @@ h1 {
 
 section {
 	margin-top: 8rem;
-	height: 100vh;
+	/* height: 100vh; */
 }
 
 section > h2,
