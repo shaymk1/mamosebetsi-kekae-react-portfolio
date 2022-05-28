@@ -1,11 +1,11 @@
+import './projects.css';
 
+const Projects = () => {
+	return (
+		<section id="projects">
+			<div>Project</div>
+		</section>
+	);
+};
 
-import './projects.css'
-
-const Project = () => {
-  return (
-    <div>Project</div>
-  )
-}
-
-export default Project
+export default Projects;
