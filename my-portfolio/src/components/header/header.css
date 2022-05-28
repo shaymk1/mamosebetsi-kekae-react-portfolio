@@ -10,13 +10,23 @@ header {
 	height: 100%;
 	position: relative;
 }
+
+.header__container > h1, h5{
+	color:var(--color-primary)
+}
+
+.header__container> h1{
+	font-family: 'Mali', cursive;
+
+}
 .header__container >h3{
 	color: var(--color-primary);
 }
 .span{
 	font-size: 1.2rem;
-	color:var(--color-orange-dark);
+	color:var(--color-white);
 	padding-right: 0.3rem;
+	font-family: 'Mali', cursive;
 }
 
 /* .header__container .img {
@@ -72,7 +82,7 @@ header {
 	/* left:calc(50% - 11rem); */
 	left: 50%;
 	transform: translateX(-50%);
-	margin-top: 1rem;
+	margin-top: 0.5rem;
     /* overflow:hidden; */
     padding: 1.5rem ; 
 }

@@ -6,24 +6,44 @@ import { MdContactPhone } from 'react-icons/md';
 import './nav.css';
 
 const Nav = () => {
-	const[activeNav, setActiveNav] = useState('#');
+	const [activeNav, setActiveNav] = useState('#');
 	return (
 		<nav>
-			<a href="#home" className={activeNav === '#' ? 'active' : ''}>
+			<a
+				href="/#"
+				onClick={() => setActiveNav('#')}
+				className={activeNav === '#' ? 'active' : ''}
+			>
 				<AiTwotoneHome />
 			</a>
-			<a href="#about"  >
+			<a
+				href="#about"
+				onClick={() => setActiveNav('#about')}
+				className={activeNav === '#about' ? 'active' : ''}
+			>
 				<FaUserCircle />
 			</a>
 
-			<a href="#skills">
+			<a
+				href="#skills"
+				onClick={() => setActiveNav('#skills')}
+				className={activeNav === '#skills' ? 'active' : ''}
+			>
 				<BsFillFileEarmarkCodeFill />
 			</a>
-			<a href="#projects">
+			<a
+				href="#projects"
+				onClick={() => setActiveNav('#projects')}
+				className={activeNav === '#projects' ? 'active' : ''}
+			>
 				<AiFillProject />
 			</a>
 
-			<a href="#contact">
+			<a
+				href="#contact"
+				onClick={() => setActiveNav('#contact')}
+				className={activeNav === '#contact' ? 'active' : ''}
+			>
 				<MdContactPhone />
 			</a>
 		</nav>
