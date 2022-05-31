@@ -80,7 +80,7 @@ const Projects = () => {
 								</a>
 								<a
 									href="{demo}"
-									className='btn btn-primary'
+									className="btn btn-primary"
 									target="_blank"
 									rel="noreferrer"
 								>

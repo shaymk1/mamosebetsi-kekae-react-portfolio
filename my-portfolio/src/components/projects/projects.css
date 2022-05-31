@@ -31,6 +31,9 @@
 	gap: 1rem;
 	margin-bottom: 1rem;
 }
+.portfolio__item-cta   .btn .btn-primary{
+	background: var(--color-bg-variant-new);
+}
 
 @media screen and(max-width:1024px) {
 	.portfolio__container {

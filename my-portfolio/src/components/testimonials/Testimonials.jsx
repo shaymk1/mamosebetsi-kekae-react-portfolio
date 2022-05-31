@@ -18,7 +18,7 @@ const testimonials = [
 		image: AVTR1,
 		name: 'Mamo Mapossa',
 		review:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos non quasi tenetur neque quisquam a, amet excepturi eligendi alias aliquam voluptate odio voluptatibus, fugiat aliquid modi, corrupti nemo sed itaque!',
+			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos non quasi tenetur neque quisquam a, amet excepturi eligendi alias aliquam voluptate odio voluptatibus, fugiat aliquid modi, corrupti nemo sed itaque!voluptate odio voluptatibus, fugiat aliquid modi, corrupti nemo sed itaqu ',
 	},
 
 	/*testimonial-2*/
@@ -27,7 +27,7 @@ const testimonials = [
 		image: AVTR2,
 		name: 'Felicia Mapossa',
 		review:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos non quasi tenetur neque quisquam a, amet excepturi eligendi alias aliquam voluptate odio voluptatibus, fugiat aliquid modi, corrupti nemo sed itaque!',
+			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos non quasi tenetur neque quisquam a, amet excepturi eligendi alias aliquam voluptate odio voluptatibus, fugiat aliquid modi, corrupti nemo sed itaque!voluptate odio voluptatibus, fugiat aliquid modi, corrupti nemo sed itaqu ',
 	},
 
 	/*testimonial-3*/
@@ -36,7 +36,7 @@ const testimonials = [
 		image: AVTR3,
 		name: 'Thandie Mapossa',
 		review:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos non quasi tenetur neque quisquam a, amet excepturi eligendi alias aliquam voluptate odio voluptatibus, fugiat aliquid modi, corrupti nemo sed itaque!',
+			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos non quasi tenetur neque quisquam a, amet excepturi eligendi alias aliquam voluptate odio voluptatibus, fugiat aliquid modi, corrupti nemo sed itaque!voluptate odio voluptatibus, fugiat aliquid modi, corrupti nemo sed itaqu ',
 	},
 
 	/*testimonial-4*/
@@ -53,12 +53,14 @@ const Testimonials = () => {
 	return (
 		<section>
 			<h2>Testimonials</h2>
-			<Swiper className="container testimonials__container">
-				{/*install Swiper modules*/}
+			<Swiper className="container testimonials__container"
+			/*install Swiper modules*/
 				modules={[Pagination, Navigation]}
 				spaceBetween={40}
 				slidesPerView={1}
 				navigation pagination={{ clickable: true }}
+			>
+				
 				{/*mapping through an array*/}
 				{testimonials.map(({ id, image, name, review }) => {
 					return (
