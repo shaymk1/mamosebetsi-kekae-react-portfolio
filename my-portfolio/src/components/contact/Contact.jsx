@@ -1,34 +1,13 @@
 // import { AiOutlineInstagram } from 'react-icons/ai';
 // import { RiMessengerLineMdEmail } from 'react-icons/ri';
-import emailjs from '@emailjs/browser';
-import React, { useRef } from 'react';
+// import emailjs from '@emailjs/browser';
+// import React, { useRef } from 'react';
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 import { MdEmail } from 'react-icons/md';
 import './contact.css';
 
 const Contact = () => {
-	const form = useRef();
 
-	const sendEmail = (e) => {
-		e.preventDefault();
-
-		emailjs
-			.sendForm(
-				'service_of3ui8b',
-				'template_ia1giu9',
-				form.current,
-				'XoQVZCuV5gDCytjEX'
-			)
-			.then(
-				(result) => {
-					console.log(result.text);
-				},
-				(error) => {
-					console.log(error.text);
-				}
-			);
-			e.target.reset();
-	};
 	return (
 		<section id="contact">
 			<h5>Please Get In Touch!</h5>
@@ -65,10 +44,9 @@ const Contact = () => {
 						</a>
 					</article>
 				</div>
-
 				{/*form*/}
-
-				<form ref="form" onSubmit={sendEmail}>
+				{/*onSubmit={sendEmail}*/}
+				<form ref="form">
 					<input type="text" name="name" placeholder="Full Name" required />
 					<input type="email" name="email" placeholder="Your Email" required />
 					<textarea
@@ -87,6 +65,48 @@ const Contact = () => {
 };
 
 export default Contact;
+
+	// const form = useRef();
+
+	// const sendEmail = (e) => {
+	// 	e.preventDefault();
+
+	// 	emailjs
+	// 		.sendForm(
+	// 			'service_of3ui8b',
+	// 			'template_ia1giu9',
+	// 			form.current,
+	// 			'XoQVZCuV5gDCytjEX'
+	// 		)
+	// 		.then(
+	// 			(result) => {
+	// 				console.log(result.text);
+	// 			},
+	// 			(error) => {
+	// 				console.log(error.text);
+	// 			}
+	// 		);
+	// 	e.target.reset();
+	// };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*option-2*/
 
