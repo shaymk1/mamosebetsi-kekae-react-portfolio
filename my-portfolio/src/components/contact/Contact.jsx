@@ -7,7 +7,6 @@ import { MdEmail } from 'react-icons/md';
 import './contact.css';
 
 const Contact = () => {
-
 	return (
 		<section id="contact">
 			<h5>Please Get In Touch!</h5>
@@ -66,47 +65,28 @@ const Contact = () => {
 
 export default Contact;
 
-	// const form = useRef();
+// const form = useRef();
 
-	// const sendEmail = (e) => {
-	// 	e.preventDefault();
+// const sendEmail = (e) => {
+// 	e.preventDefault();
 
-	// 	emailjs
-	// 		.sendForm(
-	// 			'service_of3ui8b',
-	// 			'template_ia1giu9',
-	// 			form.current,
-	// 			'XoQVZCuV5gDCytjEX'
-	// 		)
-	// 		.then(
-	// 			(result) => {
-	// 				console.log(result.text);
-	// 			},
-	// 			(error) => {
-	// 				console.log(error.text);
-	// 			}
-	// 		);
-	// 	e.target.reset();
-	// };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// 	emailjs
+// 		.sendForm(
+// 			'service_of3ui8b',
+// 			'template_ia1giu9',
+// 			form.current,
+// 			'XoQVZCuV5gDCytjEX'
+// 		)
+// 		.then(
+// 			(result) => {
+// 				console.log(result.text);
+// 			},
+// 			(error) => {
+// 				console.log(error.text);
+// 			}
+// 		);
+// 	e.target.reset();
+// };
 
 /*option-2*/
 
